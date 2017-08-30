@@ -148,14 +148,13 @@ a:visited {
 #see-all {
     position: absolute;
     left: 55px;
-    bottom: 150px;
+  
     width: 14px;
     display: none;
 }
 #see-all-text {
     position: absolute;
     left: 76px;
-    bottom: 140px;
     display:none;
 }
 
@@ -192,3 +191,10 @@ li {
     margin-left: 20px;
 }
 
+.controls {
+    display:none;
+}
+
+.carousel-control {
+    width: 370px;
+}

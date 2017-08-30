@@ -20,3 +20,15 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+
+$(document).ready(function () {
+    $('#myCarousel3').on('slid.bs.carousel', function () {
+        var album = $('#paris').width();
+        var slideFrom = $(this).find('.active').index();
+        var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
+        var final = ( album - widthOfPhoto ) / 2;
+        console.log(final); 
+        $('.carousel-control').css('width', final);
+    })    
+});
+

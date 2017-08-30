@@ -3,10 +3,13 @@ $(document).ready(larg);
 $(window).resize(larg);
 function larg() {
     var klaus = (window.innerHeight - 667) / 2;
+    var kalauz = window.innerHeight - 667;
     $('.container-margins').css('margin-top', klaus);
     $('#rights').css('bottom', klaus);
     $('.soc-icon1').css('bottom', klaus + 10);
     $('.soc-icon2').css('bottom', klaus + 10);
+    $('#see-all').css('bottom', kalauz + 10);
+    $('#see-all-text').css('bottom', kalauz);
 };
 
 // Function for navigation bar (SlideUp and SlideDown)
@@ -75,71 +78,6 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
     $('#' + pipiliti).css("color", "grey");
 });
 
-// Carousel functions
-jQuery(document).ready(function ($) {
-    $('#myCarousel').carousel({
-        interval: 10000000
-    });
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        try {
-            var id = /-(\d+)$/.exec(id_selector)[1];
-            console.log(id_selector, id);
-            jQuery('#myCarousel').carousel(parseInt(id));
-        } catch (e) {
-            console.log('Regex failed!', e);
-        }
-    });
-});
-
-jQuery(document).ready(function ($) {
-    $('#myCarousel2').carousel({
-        interval: 10000000
-    });
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        try {
-            var id = /-(\d+)$/.exec(id_selector)[1];
-            console.log(id_selector, id);
-            jQuery('#myCarousel2').carousel(parseInt(id));
-        } catch (e) {
-            console.log('Regex failed!', e);
-        }
-    });
-});
-jQuery(document).ready(function ($) {
-    $('#myCarousel3').carousel({
-        interval: 10000000
-    });
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        try {
-            var id = /-(\d+)$/.exec(id_selector)[1];
-            console.log(id_selector, id);
-            jQuery('#myCarousel3').carousel(parseInt(id));
-        } catch (e) {
-            console.log('Regex failed!', e);
-        }
-    });
-});
-
-// Slider
-// jQuery(document).ready(function ($) {
-//     var dragging = false,
-//         scrolling = false,
-//         resizing = false;
-//     var imageComparisonContainers = $('.cd-image-container');
-//     // checkPosition(imageComparisonContainers);
-//     imageComparisonContainers.each(function () {
-//         var actual = $(this);
-//         actual.addClass('is-visible')
-//         drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-image-label[data-type="modified"]'));
-//     });
-// });
-
 
 // Fuctions for see-all and navigation in album
 $('.sub-menu-photo a').click(function () {
@@ -150,8 +88,6 @@ $('#name a , .sub-menu-video a , #biography a').click(function (e) {
     $("#see-all").fadeOut(400);
     $("#see-all-text").fadeOut(400);
 });
-
-
 
 // Function for see-all
 $('.sub-menu-photo a').click(function (e) {
@@ -187,26 +123,33 @@ setInterval(function () {
 }, 5000);
 
 
-
-$(document).ready( function() {
-    $("#ko").on("click", function() {
+// Ayax for html albums
+$(document).ready(function () {
+    $("#ko").on("click", function () {
         $("#kolos").load("views/kolos.html");
     });
 });
-$(document).ready( function() {
-    $("#bo").on("click", function() {
+$(document).ready(function () {
+    $("#bo").on("click", function () {
         $("#bor").load("views/bor.html");
     });
 });
-$(document).ready( function() {
-    $("#ci").on("click", function() {
+$(document).ready(function () {
+    $("#ci").on("click", function () {
         $("#juveline").load("views/juveline.html");
     });
 });
-$(document).ready( function() {
-    $("#ju").on("click", function() {
+$(document).ready(function () {
+    $("#ju").on("click", function () {
         $("#paris").load("views/paris.html");
     });
 });
+$(document).ready(function () {
+    $("#mu").on("click", function () {
+        $("#music").load("views/music.html");
+    });
+});
+
+
 
 

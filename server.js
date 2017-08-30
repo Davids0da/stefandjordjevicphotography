@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/views/index.html'));
 });
 
-//Album views
+//views
 app.get('/views/kolos.html', function (req, res) {
   res.sendFile(path.join(__dirname + '/views/kolos.html'));
 });
@@ -25,6 +25,9 @@ app.get('/views/juveline.html', function (req, res) {
 });
 app.get('/views/paris.html', function (req, res) {
   res.sendFile(path.join(__dirname + '/views/paris.html'));
+});
+app.get('/views/music.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/music.html'));
 });
 
 var port = process.env.PORT || 9000
