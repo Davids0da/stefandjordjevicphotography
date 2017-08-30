@@ -195,6 +195,6 @@ li {
     display:none;
 }
 
-.carousel-control {
-    width: 370px;
+.play , .rounded-box , .state-paused {
+    display: block;
 }

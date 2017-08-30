@@ -21,13 +21,17 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// Function for just Paris photo album for responsive left and right arrows 
 $(document).ready(function () {
+    var album = $('#paris').width();
+    var aaa = $('.main-page-photo-height').width();
+    var finale = ( album - aaa ) / 2;
+    $('.carousel-control').css('width', finale);
     $('#myCarousel3').on('slid.bs.carousel', function () {
         var album = $('#paris').width();
         var slideFrom = $(this).find('.active').index();
         var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
         var final = ( album - widthOfPhoto ) / 2;
-        console.log(final); 
         $('.carousel-control').css('width', final);
     })    
 });
