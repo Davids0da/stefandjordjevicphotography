@@ -1,3 +1,14 @@
+// Function for responsive top and bottom margin
+$(document).ready(larg);
+$(window).resize(larg);
+function larg() {
+    var klaus = (window.innerHeight - 667) / 2;
+    $('.container-margins').css('margin-top', klaus);
+    $('#rights').css('bottom', klaus);
+    $('.soc-icon1').css('bottom', klaus + 10);
+    $('.soc-icon2').css('bottom', klaus + 10);
+};
+
 // Function for navigation bar (SlideUp and SlideDown)
 $(document).ready(function () {
     $('#photography').click(function () {
@@ -52,19 +63,6 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
     });
 });
 
-
-// Function for responsive top and bottom margin
-$(document).ready(larg);
-$(window).resize(larg);
-function larg() {
-    var klaus = (window.innerHeight - 667) / 2;
-    $('.container-margins').css('margin-top', klaus);
-    $('#rights').css('bottom', klaus);
-    $('.soc-icon1').css('bottom', klaus + 10);
-    $('.soc-icon2').css('bottom', klaus + 10);
-};
-
-
 // Function for focused links to be none pointer events
 var array1 = [];
 $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(function (e) {
@@ -80,7 +78,7 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
 // Carousel functions
 jQuery(document).ready(function ($) {
     $('#myCarousel').carousel({
-        interval: 100000
+        interval: 10000000
     });
     //Handles the carousel thumbnails
     $('[id^=carousel-selector-]').click(function () {
@@ -93,36 +91,11 @@ jQuery(document).ready(function ($) {
             console.log('Regex failed!', e);
         }
     });
-    // When the carousel slides, auto update the text
-    $('#myCarousel').on('slid.bs.carousel', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-' + id).html());
-    });
 });
-jQuery(document).ready(function ($) {
-    $('#myCarousel1').carousel({
-        interval: 100000
-    });
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        try {
-            var id = /-(\d+)$/.exec(id_selector)[1];
-            console.log(id_selector, id);
-            jQuery('#myCarousel1').carousel(parseInt(id));
-        } catch (e) {
-            console.log('Regex failed!', e);
-        }
-    });
-    // When the carousel slides, auto update the text
-    $('#myCarousel1').on('slid.bs.carousel', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-' + id).html());
-    });
-});
+
 jQuery(document).ready(function ($) {
     $('#myCarousel2').carousel({
-        interval: 100000
+        interval: 10000000
     });
     //Handles the carousel thumbnails
     $('[id^=carousel-selector-]').click(function () {
@@ -135,15 +108,10 @@ jQuery(document).ready(function ($) {
             console.log('Regex failed!', e);
         }
     });
-    // When the carousel slides, auto update the text
-    $('#myCarousel2').on('slid.bs.carousel', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-' + id).html());
-    });
 });
 jQuery(document).ready(function ($) {
     $('#myCarousel3').carousel({
-        interval: 100000
+        interval: 10000000
     });
     //Handles the carousel thumbnails
     $('[id^=carousel-selector-]').click(function () {
@@ -155,11 +123,6 @@ jQuery(document).ready(function ($) {
         } catch (e) {
             console.log('Regex failed!', e);
         }
-    });
-    // When the carousel slides, auto update the text
-    $('#myCarousel3').on('slid.bs.carousel', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-' + id).html());
     });
 });
 
@@ -188,31 +151,11 @@ $('#name a , .sub-menu-video a , #biography a').click(function (e) {
     $("#see-all-text").fadeOut(400);
 });
 
-$('#slider-thumbs1 a').click(function () {
-    $('#slider-thumbs1').fadeOut(400, function () {
-        $("#carousel-bounding-box1").fadeIn(400).css("display", "inline");
-    });
-}); $('#slider-thumbs2 a').click(function () {
-    $('#slider-thumbs2').fadeOut(400, function () {
-        $("#carousel-bounding-box2").fadeIn(400).css("display", "inline");
-    });
-}); $('#slider-thumbs3 a').click(function () {
-    $('#slider-thumbs3').fadeOut(400, function () {
-        $("#carousel-bounding-box3").fadeIn(400).css("display", "inline");
-    });
-});
-$('#slider-thumbs4 a').click(function () {
-    $('#slider-thumbs4').fadeOut(400, function () {
-        $("#carousel-bounding-box4").fadeIn(400).css("display", "inline");
-    });
-});
 
 
 // Function for see-all
-var array2 = [];
 $('.sub-menu-photo a').click(function (e) {
     let toes = $(this).attr('id');
-    array2.push(toes);
     $('#see-all-box').click(function () {
         if (toes == "bo") {
             $('#carousel-bounding-box1').fadeOut(500, function () {
@@ -239,7 +182,31 @@ $('.sub-menu-photo a').click(function (e) {
 
 // Function for slideshow
 $("#slideshow > div:gt(0)").hide();
-setInterval(function() {
-  $('#slideshow > div:first').fadeOut(1000).next().delay(1000).fadeIn(2000).end().appendTo('#slideshow');
+setInterval(function () {
+    $('#slideshow > div:first').fadeOut(1000).next().delay(1000).fadeIn(2000).end().appendTo('#slideshow');
 }, 5000);
+
+
+
+$(document).ready( function() {
+    $("#ko").on("click", function() {
+        $("#kolos").load("views/kolos.html");
+    });
+});
+$(document).ready( function() {
+    $("#bo").on("click", function() {
+        $("#bor").load("views/bor.html");
+    });
+});
+$(document).ready( function() {
+    $("#ci").on("click", function() {
+        $("#juveline").load("views/juveline.html");
+    });
+});
+$(document).ready( function() {
+    $("#ju").on("click", function() {
+        $("#paris").load("views/paris.html");
+    });
+});
+
 

@@ -1,8 +1,13 @@
+@font-face {
+    font-family: Font1;
+    src:url('/fonts/Rajdhani-Regular.woff') format('woff')
+}
+
 .navbar {
     margin-top: 55px;
 }
 body {
-    font-family: Rajdhani;
+    font-family: Font1;
 }
 #lastname {
     color: black;
@@ -167,5 +172,23 @@ a:visited {
 }
 
 #profile-picture {
-    width: 400px;
+    width: 200px;
 }
+
+ul,li {
+font-size: 15px;
+}
+
+#text-bio {
+    text-align: justify;
+    text-justify: inter-word;
+} 
+
+li {
+    margin-left: -20px;
+}
+
+.navigation {
+    margin-left: 20px;
+}
+

@@ -13,6 +13,20 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/views/index.html'));
 });
 
+//Album views
+app.get('/views/kolos.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/kolos.html'));
+});
+app.get('/views/bor.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/bor.html'));
+});
+app.get('/views/juveline.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/juveline.html'));
+});
+app.get('/views/paris.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/paris.html'));
+});
+
 var port = process.env.PORT || 9000
 app.listen(port, function () {
   console.log('Listening on port ' + port + '!')
