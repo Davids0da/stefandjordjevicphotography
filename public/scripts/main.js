@@ -123,6 +123,7 @@ setInterval(function () {
 }, 5000);
 
 
+
 // Ayax for html albums
 $(document).ready(function () {
     $("#ko").on("click", function () {
