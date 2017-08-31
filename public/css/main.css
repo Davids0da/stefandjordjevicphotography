@@ -1,8 +1,15 @@
+.carousel .right:hover {
+    cursor: url("../images/next.png"), default !important;
+ }
+ 
+ .carousel .left:hover {
+   cursor: url("../images/back.png"), default !important
+ }
+
 @font-face {
     font-family: Font1;
     src:url('/fonts/Rajdhani-Regular.woff') format('woff')
 }
-
 .navbar {
     margin-top: 55px;
 }
@@ -137,13 +144,7 @@ a:visited {
     display: none;
 }
 
-.carousel .right:hover {
-   cursor: url("../images/next.png"), default !important;
-}
 
-.carousel .left:hover {
-  cursor: url("../images/back.png"), default !important
-}
 
 #see-all {
     position: absolute;

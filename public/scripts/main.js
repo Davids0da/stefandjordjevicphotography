@@ -55,8 +55,8 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
     let to = $(this).attr('href');
     array.push(to);
     var penultimate = array[array.length - 2];
-    $(penultimate).fadeOut(500, function () {
-        $(to).fadeIn(700).css("display", "inline-block");
+    $(penultimate).fadeOut(700, function () {
+        $(to).fadeIn(2000).css("display", "inline-block");
         film = $("#film");
         film.html(film.html());
         music = $("#music");
@@ -151,5 +151,12 @@ $(document).ready(function () {
 });
 
 
+var img1 = new Image();
+var img2 = new Image();
+img1.src = "images/back.png";
+img2.src = "images/next.png";
 
-
+$(document).ready(function() {
+    $("#img1").attr("src", "images/back.png");
+    $("#img2").attr("src", "images/next.png");
+});
