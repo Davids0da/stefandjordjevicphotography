@@ -1,9 +1,10 @@
 // Function for responsive top and bottom margin
 $(document).ready(larg);
 $(window).resize(larg);
-function larg() { 
-    var klaus = (window.innerHeight - 667) / 2;
-    var kalauz = window.innerHeight - 667;
+function larg() {
+    var mainphoto = $('.main-page-photo').height();
+    var klaus = (window.innerHeight - mainphoto) / 2;
+    var kalauz = window.innerHeight - mainphoto;
     $('.container-margins').css('margin-top', klaus);
     $('#rights').css('bottom', klaus);
     $('.soc-icon1').css('bottom', klaus + 10);
@@ -13,10 +14,10 @@ function larg() {
 };
 
 // Function for slideshow div height
-$(document).ready(function(){
+$(document).ready(function () {
     var mppHeight = $('.main-page-photo').height();
     var slideShowDiv = $('#mains');
-    slideShowDiv.css('height',mppHeight);
+    slideShowDiv.css('height', mppHeight);
 });
 
 //Load arrows
@@ -173,5 +174,3 @@ $(document).ready(function () {
 $('.main-page-photo , .main-page-photo-height').on('load', function () {
     $(this).fadeIn(200);
 });
-
-
