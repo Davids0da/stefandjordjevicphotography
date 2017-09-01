@@ -168,9 +168,7 @@ a:visited {
     width: 430px;
 }
 
-.thumb-wid {
-    width: 50px;
-}
+
 
 #profile-picture {
     width: 200px;
@@ -185,12 +183,8 @@ font-size: 15px;
     text-justify: inter-word;
 } 
 
-li {
+.margin {
     margin-left: -20px;
-}
-
-.navigation {
-    margin-left: 20px;
 }
 
 .controls {
@@ -208,3 +202,8 @@ li {
 .thumbnail:hover {
     opacity: 0.7;
 }
+
+.thumbnail {
+  width: 150px;
+}
+
