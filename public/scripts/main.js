@@ -1,7 +1,7 @@
 // Function for responsive top and bottom margin
 $(document).ready(larg);
 $(window).resize(larg);
-function larg() {
+function larg() { 
     var klaus = (window.innerHeight - 667) / 2;
     var kalauz = window.innerHeight - 667;
     $('.container-margins').css('margin-top', klaus);
@@ -11,6 +11,24 @@ function larg() {
     $('#see-all').css('bottom', kalauz + 10);
     $('#see-all-text').css('bottom', kalauz);
 };
+
+// Function for slideshow div height
+$(document).ready(function(){
+    var mppHeight = $('.main-page-photo').height();
+    var slideShowDiv = $('#mains');
+    slideShowDiv.css('height',mppHeight);
+});
+
+//Load arrows
+var img1 = new Image();
+var img2 = new Image();
+img1.src = "images/back.png";
+img2.src = "images/next.png";
+
+$(document).ready(function () {
+    $("#img1").attr("src", "images/back.png");
+    $("#img2").attr("src", "images/next.png");
+});
 
 // Function for navigation bar (SlideUp and SlideDown)
 $(document).ready(function () {
@@ -151,13 +169,6 @@ $(document).ready(function () {
     });
 });
 
-
-var img1 = new Image();
-var img2 = new Image();
-img1.src = "images/back.png";
-img2.src = "images/next.png";
-
-$(document).ready(function() {
-    $("#img1").attr("src", "images/back.png");
-    $("#img2").attr("src", "images/next.png");
+$('.main-page-photo , .main-page-photo-height').on('load', function () {
+    $(this).fadeIn(200);
 });

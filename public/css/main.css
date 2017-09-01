@@ -204,3 +204,7 @@ li {
 #mains {
     overflow: hidden !important;
 }
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
