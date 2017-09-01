@@ -21,6 +21,15 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// Carousel slide next with click on image 
+var number = 0;
+$(document).ready(function(){
+    $("#myCarousel3 img").click(function() {
+        $("#myCarousel3").carousel(++number);
+      });
+}); 
+
+
 // Function for just Paris photo album for responsive left and right arrows 
     var album = $('#paris').width();
     var aaa = $('.main-page-photo-height').width();

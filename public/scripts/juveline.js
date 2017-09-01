@@ -21,6 +21,16 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// Carousel slide next with click on image 
+var number = 0;
+$(document).ready(function(){
+    $("#myCarousel2 img").click(function() {
+        $("#myCarousel2").carousel(++number);
+      });
+}); 
+
+
+
 $(document).ready(function () {
     var album = $('#juveline').width();
     var aaa = $('.main-page-photo').width();

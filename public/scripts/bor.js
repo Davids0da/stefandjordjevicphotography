@@ -21,6 +21,15 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// Carousel slide next with click on image 
+var number = 0;
+$(document).ready(function(){
+    $("#myCarousel img").click(function() {
+        $("#myCarousel").carousel(++number);
+      });
+}); 
+
+
 $(document).ready(function () {
     var album = $('#bor').width();
     var aaa = $('.main-page-photo').width();
