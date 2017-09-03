@@ -13,12 +13,6 @@ function larg() {
     $('#see-all-text').css('bottom', kalauz);
 };
 
-// Function for slideshow div height
-$(document).ready(function () {
-    var mppHeight = $('.main-page-photo').height();
-    var slideShowDiv = $('#mains');
-    slideShowDiv.css('height', mppHeight);
-});
 
 //Load arrows
 var img1 = new Image();
@@ -181,7 +175,10 @@ $(document).ready(function () {
 });
 
 
-
-
-
+// Function for slideshow div height
+$(document).ready(function () {
+    var mppHeight = $('.main-page-photo').height();
+    var slideShowDiv = $('#mains');
+    slideShowDiv.css('height', mppHeight);
+});
     
