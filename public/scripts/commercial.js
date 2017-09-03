@@ -17,6 +17,8 @@ function larges3() {
             $('.first-photo-left').css('left',videoLeftandRightSize);
             $('.first-right').css('right',videoLeftandRightSize);
             $('.first-photo-right').css('right',videoLeftandRightSize);
+            $('#first-text-left').css('left',videoLeftandRightSize);
+            $('#first-text-right').css('right',videoLeftandRightSize);
         }
 };
 
@@ -48,6 +50,8 @@ function largeses2() {
             $('.second-photo-left').css('left',videoLeftandRightSize);
             $('.second-right').css('right',videoLeftandRightSize);
             $('.second-photo-right').css('right',videoLeftandRightSize);
+            $('#second-text-left').css('left',videoLeftandRightSize);
+            $('#second-text-right').css('right',videoLeftandRightSize);
         }
 };
 
