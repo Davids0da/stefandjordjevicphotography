@@ -29,7 +29,7 @@ $(document).ready(function(){
       });
 }); 
 
-
+// Function for responisve left and right arrow 
 $(document).ready(function () {
     var album = $('#kolos').width();
     var aaa = $('.main-page-photo').width();
@@ -43,3 +43,14 @@ $(document).ready(function () {
         $('.carousel-control').css('width', final);
     })
 });
+
+
+$(document).ready(responsiveImage);
+$(window).resize(responsiveImage);
+function responsiveImage() {
+    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+    var marginForSeeAll = marginInPercent * 2;
+    var x1 = window.innerHeight - ( marginInPercent * 2 );
+    var x2 = ( x1 * 100 ) / 66.7;
+    $('.main-page-photo').css('width',x2);
+};
