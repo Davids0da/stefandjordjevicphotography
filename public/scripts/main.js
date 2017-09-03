@@ -165,12 +165,25 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $("#mu").on("click", function () {
+    $("#mu").on("click", function () { 
         $("#music").load("views/music.html");
+    });
+});
+$(document).ready(function () {
+    $("#fo").on("click", function () { 
+        $("#commercial").load("views/commercial.html");
+    });
+});
+$(document).ready(function () {
+    $("#fi").on("click", function () { 
+        $("#film").load("views/film.html");
     });
 });
 
 // Image on/load function
 $('.main-page-photo , .main-page-photo-height').on('load', function () {
-    $(this).fadeIn(200);
+    $(this).fadeIn(700);
 });
+
+
+    

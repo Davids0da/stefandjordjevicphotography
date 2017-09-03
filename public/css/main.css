@@ -11,6 +11,10 @@
    cursor: url("../images/back.png"), default !important
  }
 
+ img:hover {
+    cursor: default !important;
+ }
+
 .navbar {
     margin-top: 55px;
 }
@@ -257,3 +261,71 @@ font-size: 15px;
         width: 620px;
     }
     }
+
+
+.first-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.first-photo-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.first-right { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.first-photo-right {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.second-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.second-photo-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.second-right { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.second-photo-right {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+
+
+#first-text-left {
+    position: absolute;
+}
+#first-text-right {
+    position: absolute;
+}
+#second-text-left {
+    position: absolute;
+}
+#second-text-right {
+    position: absolute;
+}

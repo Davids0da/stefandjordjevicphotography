@@ -29,6 +29,12 @@ app.get('/views/paris.html', function (req, res) {
 app.get('/views/music.html', function (req, res) {
   res.sendFile(path.join(__dirname + '/views/music.html'));
 });
+app.get('/views/commercial.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/commercial.html'));
+});
+app.get('/views/film.html', function (req, res) {
+  res.sendFile(path.join(__dirname + '/views/film.html'));
+});
 
 var port = process.env.PORT || 9000
 app.listen(port, function () {
