@@ -8,10 +8,8 @@ function larges1() {
         $('.first-photo-left').css('left',videoLeftandRightSize);
         $('.first-right').css('right',videoLeftandRightSize);
         $('.first-photo-right').css('right',videoLeftandRightSize);
-        $('#first-text-left').css('left',videoLeftandRightSize);
-        $('#first-text-right').css('right',videoLeftandRightSize);
-        $('#second-text-left').css('left',videoLeftandRightSize);
-        $('#second-text-right').css('right',videoLeftandRightSize);
+        $('.first-text-left').css('left',videoLeftandRightSize);
+        $('.first-text-right').css('right',videoLeftandRightSize);
         if (window.innerWidth > 1500) {
             var videoWidth = $('#music').width();
             var videoLeftandRightSize = ((videoWidth * 25) / 100) / 2;  
@@ -19,10 +17,8 @@ function larges1() {
             $('.first-photo-left').css('left',videoLeftandRightSize);
             $('.first-right').css('right',videoLeftandRightSize);
             $('.first-photo-right').css('right',videoLeftandRightSize);
-            $('#first-text-left').css('left',videoLeftandRightSize);
-            $('#first-text-right').css('right',videoLeftandRightSize);
-            $('#second-text-left').css('left',videoLeftandRightSize);
-            $('#second-text-right').css('right',videoLeftandRightSize);
+            $('.first-text-left').css('left',videoLeftandRightSize);
+            $('.first-text-right').css('right',videoLeftandRightSize);
         }
 };
 
@@ -37,8 +33,8 @@ $('.first-photo-right').click(function(){
 $(document).ready(largomen);
 $(window).resize(largomen);
 function largomen() {
-    $('#first-text-left').css('top', 250);
-    $('#first-text-right').css('top', 250);
+    $('.first-text-left').css('top', 250);
+    $('.first-text-right').css('top', 250);
 };
 
 
