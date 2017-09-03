@@ -44,3 +44,24 @@ $(document).ready(function(){
     });    
 
 
+
+    $(document).ready(responsiveImage1);
+    $(window).resize(responsiveImage1);
+    function responsiveImage1() {
+        var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+        var marginForSeeAll = marginInPercent * 2;
+        var x1 = window.innerHeight - ( marginInPercent * 2 );
+        var x2 = ( x1 * 100 ) / 66.7;
+        var y1 = ( x1 * 66.7) / 100;
+        $('.main-page-photo').css('width',x2);
+        $('.main-page-photo-height').css('width',y1);
+    };
+
+    $(document).ready(functionForOverflow1);
+    $(window).resize(functionForOverflow1);
+    function functionForOverflow1() {
+        var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+        var heightForOverflowDivs =  window.innerHeight - marginInPercent;
+        $('#slider-thumbs4').css('height',heightForOverflowDivs);
+        $('#slider-thumbs4').css('overflow', 'scroll');
+    };

@@ -65,21 +65,24 @@ $(document).ready(function () {
 // Function for navigation bar to navigate to certain page
 var array = [];
 array.push('#mains')
-$('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(function (e) {
-    e.preventDefault(e);
-    let to = $(this).attr('href');
-    array.push(to);
-    var penultimate = array[array.length - 2];
-    $(penultimate).fadeOut(700, function () {
-        $(to).fadeIn(2000).css("display", "inline-block");
-        film = $("#film");
-        film.html(film.html());
-        music = $("#music");
-        music.html(music.html());
-        commercial = $("#commercial");
-        commercial.html(commercial.html());
+$(document).ready(function(){
+    $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(function (e) {
+        e.preventDefault(e);
+        let to = $(this).attr('href');
+        array.push(to);
+        var penultimate = array[array.length - 2];
+        $(penultimate).fadeOut(500, function () {
+            $(to).fadeIn(500).css("display", "inline-block");
+            film = $("#film");
+            film.html(film.html());
+            music = $("#music");
+            music.html(music.html());
+            commercial = $("#commercial");
+            commercial.html(commercial.html());
+        });
     });
 });
+
 
 // Function for focused links to be none pointer events
 var array1 = [];

@@ -165,12 +165,6 @@ a:visited {
  cursor: pointer;
 }
 
-.main-page-photo-height {
-    width: 430px;
-}
-
-
-
 #profile-picture {
     width: 200px;
 }
@@ -239,18 +233,12 @@ font-size: 15px;
     .thumbnail {
         width: 170px;
      }
-    .main-page-photo-height {
-        width: 535px;
-    }
     }
 
 @media (min-width:1918px) {  
      .thumbnail {
         width: 170px;
      }
-     .main-page-photo-height {
-        width: 620px;
-    }
     }
 
 
@@ -320,3 +308,119 @@ font-size: 15px;
 #second-text-right {
     position: absolute;
 }
+
+.text-juve {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.col-md-5 {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 470px;
+}
+#margins {
+    margin-right: 35px;
+}
+
+.first-left1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.first-photo-left1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.first-right1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.first-photo-right1 {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.second-left1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.second-photo-left1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.second-right1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.second-photo-right1 {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+
+
+#first-text-left1 {
+    position: absolute;
+}
+#first-text-right1 {
+    position: absolute;
+}
+#second-text-left2 {
+    position: absolute;
+}
+#second-text-right2{
+    position: absolute;
+}
+
+.second-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.second-photo-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.second-right2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.second-photo-right2 {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+#second-text-left2 {
+    position: absolute;
+}
+#second-text-right2 {
+    position: absolute;
+}
+

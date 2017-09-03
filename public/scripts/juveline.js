@@ -44,3 +44,15 @@ $(document).ready(function () {
         $('.carousel-control').css('width', final);
     })    
 });
+
+
+$(document).ready(responsiveImage1);
+$(window).resize(responsiveImage1);
+function responsiveImage1() {
+    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+    var marginForSeeAll = marginInPercent * 2;
+    var x1 = window.innerHeight - ( marginInPercent * 2 );
+    var x2 = ( x1 * 100 ) / 66.7;
+    $('.main-page-photo').css('width',x2);
+};
+

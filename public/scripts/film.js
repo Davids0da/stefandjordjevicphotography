@@ -64,14 +64,21 @@ $('.second-photo-right').click(function(){
 
 
 
-$(document).ready(largom1);
+$(document).ready(largom1); 
 $(window).resize(largom1);
 function largom1() {
-    $('.second-left , .second-photo-left , .second-photo-right , .second-right').css('top',300);
+    $('.second-left , .second-photo-left , .second-photo-right , .second-right').css('top',480);
     $('.first-text-left').css('top', 250);
     $('.first-text-right').css('top', 250);
-    $('.second-text-left').css('top', 550);
-    $('.second-text-right').css('top', 550);
+    $('.second-text-left').css('top', 730);
+    $('.second-text-right').css('top', 730);
 };
 
-
+$(document).ready(functionForOverflow);
+$(window).resize(functionForOverflow);
+function functionForOverflow() {
+    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+    var heightForOverflowDivs =  window.innerHeight - marginInPercent;
+    $('#film').css('height',heightForOverflowDivs);
+    $('#film').css('overflow', 'scroll');
+};
