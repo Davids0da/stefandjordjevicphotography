@@ -180,10 +180,8 @@ $(document).ready(function () {
     });
 });
 
-// Image on/load function
-$('.main-page-photo , .main-page-photo-height').on('load', function () {
-    $(this).fadeIn(700);
-});
+
+
 
 
     
