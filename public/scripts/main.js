@@ -2,15 +2,14 @@
 $(document).ready(larg);
 $(window).resize(larg);
 function larg() {
-    var mainphoto = $('.main-page-photo').height();
-    var klaus = (window.innerHeight - mainphoto) / 2;
-    var kalauz = window.innerHeight - mainphoto;
-    $('.container-margins').css('margin-top', klaus);
-    $('#rights').css('bottom', klaus);
-    $('.soc-icon1').css('bottom', klaus + 10);
-    $('.soc-icon2').css('bottom', klaus + 10);
-    $('#see-all').css('bottom', kalauz + 10);
-    $('#see-all-text').css('bottom', kalauz);
+    var marginInPercent = ((window.innerHeight * 15) / 100 ) / 2; 
+    var marginForSeeAll = marginInPercent * 2;
+    $('.container-margins').css('margin-top', marginInPercent);
+    $('#rights').css('bottom', marginInPercent);
+    $('.soc-icon1').css('bottom', marginInPercent + 10);
+    $('.soc-icon2').css('bottom', marginInPercent + 10);
+    $('#see-all').css('bottom', marginForSeeAll + 10);
+    $('#see-all-text').css('bottom', marginForSeeAll);
 };
 
 
