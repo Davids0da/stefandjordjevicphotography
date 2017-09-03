@@ -1,7 +1,7 @@
 //FIRST 
-$(document).ready(larges);
-$(window).resize(larges);
-function larges() {
+$(document).ready(larges3);
+$(window).resize(larges3);
+function larges3() {
         var videoWidth = $('#music').width();
         var videoLeftandRightSize = ((videoWidth * 15) / 100) / 2;  
         $('.first-left').css('left',videoLeftandRightSize);
@@ -30,9 +30,9 @@ $('.first-photo-right').click(function(){
 
 
 //SECOND 
-$(document).ready(largeses);
-$(window).resize(largeses);
-function largeses() {
+$(document).ready(largeses2);
+$(window).resize(largeses2);
+function largeses2() {
         var videoWidth = $('#music').width();
         var videoLeftandRightSize = ((videoWidth * 15) / 100) / 2;  
         $('.second-left').css('left',videoLeftandRightSize);
@@ -60,9 +60,9 @@ $('.second-photo-right').click(function(){
 
 
 
-$(document).ready(largomende);
-$(window).resize(largomende);
-function largomende() {
+$(document).ready(largomende3);
+$(window).resize(largomende3);
+function largomende3() {
     $('.second-left , .second-photo-left , .second-photo-right , .second-right').css('top',300);
     $('#first-text-left').css('top', 250);
     $('#first-text-right').css('top', 250);

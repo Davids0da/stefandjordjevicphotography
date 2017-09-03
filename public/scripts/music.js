@@ -1,7 +1,7 @@
 //FIRST 
-$(document).ready(larges);
-$(window).resize(larges);
-function larges() {
+$(document).ready(larges1); 
+$(window).resize(larges1);
+function larges1() {
         var videoWidth = $('#music').width();
         var videoLeftandRightSize = ((videoWidth * 15) / 100) / 2;  
         $('.first-left').css('left',videoLeftandRightSize);
@@ -17,6 +17,8 @@ function larges() {
             $('.first-photo-left').css('left',videoLeftandRightSize);
             $('.first-right').css('right',videoLeftandRightSize);
             $('.first-photo-right').css('right',videoLeftandRightSize);
+            $('#first-text-left').css('left',videoLeftandRightSize);
+            $('#first-text-right').css('right',videoLeftandRightSize);
         }
 };
 
