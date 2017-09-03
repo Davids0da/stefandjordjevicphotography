@@ -10,6 +10,8 @@ function larges1() {
         $('.first-photo-right').css('right',videoLeftandRightSize);
         $('#first-text-left').css('left',videoLeftandRightSize);
         $('#first-text-right').css('right',videoLeftandRightSize);
+        $('#second-text-left').css('left',videoLeftandRightSize);
+        $('#second-text-right').css('right',videoLeftandRightSize);
         if (window.innerWidth > 1500) {
             var videoWidth = $('#music').width();
             var videoLeftandRightSize = ((videoWidth * 25) / 100) / 2;  
@@ -19,6 +21,8 @@ function larges1() {
             $('.first-photo-right').css('right',videoLeftandRightSize);
             $('#first-text-left').css('left',videoLeftandRightSize);
             $('#first-text-right').css('right',videoLeftandRightSize);
+            $('#second-text-left').css('left',videoLeftandRightSize);
+            $('#second-text-right').css('right',videoLeftandRightSize);
         }
 };
 
