@@ -50,9 +50,6 @@ a:active , a:hover {
     height: 100px
 }
 
-.main-page-photo {
-   width: 1000px;
-}
 
 #name {
     position: absolute;
@@ -239,9 +236,6 @@ font-size: 15px;
 
 /* hi-res laptops and desktops */
 @media (min-width:1600px) {  
-    .main-page-photo {
-        width: 1200px;
-    }
     .thumbnail {
         width: 170px;
      }
@@ -251,9 +245,6 @@ font-size: 15px;
     }
 
 @media (min-width:1918px) {  
-    .main-page-photo {
-        width: 1400px;
-     }
      .thumbnail {
         width: 170px;
      }

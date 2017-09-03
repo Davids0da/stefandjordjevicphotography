@@ -2,8 +2,11 @@
 $(document).ready(larg);
 $(window).resize(larg);
 function larg() {
-    var marginInPercent = ((window.innerHeight * 15) / 100 ) / 2; 
+    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
     var marginForSeeAll = marginInPercent * 2;
+    var x1 = window.innerHeight - ( marginInPercent * 2 );
+    var x2 = ( x1 * 100 ) / 66.7;
+    $('.main-page-photo').css('width',x2);
     $('.container-margins').css('margin-top', marginInPercent);
     $('#rights').css('bottom', marginInPercent);
     $('.soc-icon1').css('bottom', marginInPercent + 10);
