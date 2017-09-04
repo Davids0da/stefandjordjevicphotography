@@ -539,3 +539,37 @@ font-size: 15px;
 .margins-juve {
     margin-left: 45px !important;
 }
+
+
+.f-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.f-photo-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.f-right { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.f-photo-right {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+#f-text-left {
+    position: absolute;
+}
+#f-text-right {
+    position: absolute;
+}
