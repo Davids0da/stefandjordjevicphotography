@@ -571,3 +571,7 @@ font-size: 15px;
 #f-text-right {
     position: absolute;
 }
+
+.double {
+    height: 208px;
+}

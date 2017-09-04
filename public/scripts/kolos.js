@@ -23,11 +23,11 @@ jQuery(document).ready(function ($) {
 
 // Carousel slide next with click on image 
 var number = 0;
-$(document).ready(function () {
-    $("#myCarousel1 img").click(function () {
+$(document).ready(function(){
+    $("#myCarousel1 img").click(function() {
         $("#myCarousel1").carousel(++number);
-    });
-});
+      });
+}); 
 
 // Function for responisve left and right arrow 
 $(document).ready(function () {
@@ -48,9 +48,9 @@ $(document).ready(function () {
 $(document).ready(responsiveImage);
 $(window).resize(responsiveImage);
 function responsiveImage() {
-    var marginInPercent = ((window.innerHeight * 18) / 100) / 2;
+    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
     var marginForSeeAll = marginInPercent * 2;
-    var x1 = window.innerHeight - (marginInPercent * 2);
-    var x2 = (x1 * 100) / 66.7;
-    $('.main-page-photo').css('width', x2);
+    var x1 = window.innerHeight - ( marginInPercent * 2 );
+    var x2 = ( x1 * 100 ) / 66.7;
+    $('.main-page-photo').css('width',x2);
 };
