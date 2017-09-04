@@ -56,6 +56,9 @@ function responsiveImage1() {
     var y1 = (x1 * 66.7) / 100;
     $('.main-page-photo').css('width', x2);
     $('.main-page-photo-height').css('width', y1);
+    if ($(window).width() <= 1025) {
+        $('.main-page-photo-height').css('width','450px');
+    }
 };
 
 //Function for overflow

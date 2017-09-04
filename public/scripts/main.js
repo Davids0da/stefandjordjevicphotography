@@ -3,7 +3,7 @@ $(document).ready(larg);
 $(window).resize(larg);
 function larg() {
     var marginInPercent = ((window.innerHeight * 18) / 100) / 2;
-    var marginInPercentMobile = ((window.innerHeight * 18) / 100) / 4;
+    var marginInPercentMobile = ((window.innerHeight * 18) / 100) / 6;
     var marginForSeeAll = marginInPercent * 2;
     var x1 = window.innerHeight - (marginInPercent * 2);
     var x2 = (x1 * 100) / 66.7;
