@@ -6,7 +6,7 @@ $('#slider-thumbs3 a').click(function () {
 
 jQuery(document).ready(function ($) {
     $('#myCarousel2').carousel({
-        interval: 10000000
+        interval: false
     });
     //Handles the carousel thumbnails
     $('[id^=carousel-selector-]').click(function () {
