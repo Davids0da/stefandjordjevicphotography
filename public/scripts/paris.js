@@ -35,7 +35,8 @@ var album = $('#paris').width();
 var aaa = $('.main-page-photo-height').width();
 var finale = (album - aaa) / 2;
 $('.carousel-control').css('width', finale);
-$('#myCarousel3').on('slid.bs.carousel', function () {
+$('#myCarousel3').on('slid.bs.carousel', function (e) {
+    e.preventDefault(e);
     var album = $('#paris').width();
     var slideFrom = $(this).find('.active').index();
     var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
