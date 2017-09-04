@@ -29,7 +29,7 @@ function larg() {
 
 //Load arrows
 var img1 = new Image();
-var img2 = new Image();
+var img2 = new Image(); 
 img1.src = "images/back.png";
 img2.src = "images/next.png";
 
@@ -189,5 +189,4 @@ $(document).ready(function () {
         $("#film").load("views/film.html");
     });
 });
-
 

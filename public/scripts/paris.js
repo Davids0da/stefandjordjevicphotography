@@ -1,7 +1,7 @@
 $('#slider-thumbs4 a').click(function () {
     $('#slider-thumbs4').fadeOut(500, function () {
         $("#carousel-bounding-box4").fadeIn(400).css("display", "inline");
-    });
+    }); 
 });
 
 jQuery(document).ready(function ($) {

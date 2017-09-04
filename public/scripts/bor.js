@@ -23,34 +23,34 @@ jQuery(document).ready(function ($) {
 
 // Carousel slide next with click on image 
 var number = 0;
-$(document).ready(function(){
-    $("#myCarousel img").click(function() {
+$(document).ready(function () {
+    $("#myCarousel img").click(function () {
         $("#myCarousel").carousel(++number);
-      });
-}); 
+    });
+});
 
 
 $(document).ready(function () {
     var album = $('#bor').width();
     var aaa = $('.main-page-photo').width();
-    var finale = ( album - aaa ) / 2;
+    var finale = (album - aaa) / 2;
     $('.carousel-control').css('width', finale);
     $('#myCarousel').on('slid.bs.carousel', function () {
         var album = $('#paris').width();
         var slideFrom = $(this).find('.active').index();
         var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
-        var final = ( album - widthOfPhoto ) / 2;
+        var final = (album - widthOfPhoto) / 2;
         $('.carousel-control').css('width', final);
-    })    
+    })
 });
 
 
 $(document).ready(responsiveImage1);
 $(window).resize(responsiveImage1);
 function responsiveImage1() {
-    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+    var marginInPercent = ((window.innerHeight * 18) / 100) / 2;
     var marginForSeeAll = marginInPercent * 2;
-    var x1 = window.innerHeight - ( marginInPercent * 2 );
-    var x2 = ( x1 * 100 ) / 66.7;
-    $('.main-page-photo').css('width',x2);
+    var x1 = window.innerHeight - (marginInPercent * 2);
+    var x2 = (x1 * 100) / 66.7;
+    $('.main-page-photo').css('width', x2);
 };
