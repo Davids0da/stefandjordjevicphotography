@@ -23,16 +23,6 @@ function larg() {
         $('#see-all-text').css('bottom', marginForSeeAll / 2);
         $('#see-all').css('bottom', marginInPercentMobile + 14);
         $('#see-all-text').css('bottom', marginInPercentMobile);
-        var heig = $("slider-thumbs1").height();
-        var iner = ( window.innerHeight * 6 ) / 100;
-        if (heig > iner) {
-            $('.container-margins').css('heigt','1300px');
-            $('#see-all-text').slideDown('normal');
-            $('#see-all').slideDown('normal');
-            $('#rights').slideDown('normal');
-            $('.soc-icon1').slideDown('normal');
-            $('.soc-icon2').slideDown('normal');
-        }
     }
 };
 
