@@ -2,17 +2,24 @@
 $(document).ready(larg);
 $(window).resize(larg);
 function larg() {
-    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+    var marginInPercent = ((window.innerHeight * 18) / 100) / 2;
+    var marginInPercentMobile = ((window.innerHeight * 18) / 100) / 4;
     var marginForSeeAll = marginInPercent * 2;
-    var x1 = window.innerHeight - ( marginInPercent * 2 );
-    var x2 = ( x1 * 100 ) / 66.7;
-    $('.main-page-photo').css('width',x2);
+    var x1 = window.innerHeight - (marginInPercent * 2);
+    var x2 = (x1 * 100) / 66.7;
+    $('.main-page-photo').css('width', x2);
     $('.container-margins').css('margin-top', marginInPercent);
     $('#rights').css('bottom', marginInPercent);
     $('.soc-icon1').css('bottom', marginInPercent + 10);
     $('.soc-icon2').css('bottom', marginInPercent + 10);
     $('#see-all').css('bottom', marginForSeeAll + 10);
     $('#see-all-text').css('bottom', marginForSeeAll);
+    if ($(window).width() <= 1025) {
+        $('.container-margins').css('margin-top', marginInPercentMobile);
+        $('#rights').css('bottom', marginInPercentMobile);
+        $('.soc-icon1').css('bottom', marginInPercentMobile + 10);
+        $('.soc-icon2').css('bottom', marginInPercentMobile + 10);
+    }
 };
 
 
@@ -65,7 +72,7 @@ $(document).ready(function () {
 // Function for navigation bar to navigate to certain page
 var array = [];
 array.push('#mains')
-$(document).ready(function(){
+$(document).ready(function () {
     $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(function (e) {
         e.preventDefault(e);
         let to = $(this).attr('href');
@@ -164,17 +171,17 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $("#mu").on("click", function () { 
+    $("#mu").on("click", function () {
         $("#music").load("views/music.html");
     });
 });
 $(document).ready(function () {
-    $("#fo").on("click", function () { 
+    $("#fo").on("click", function () {
         $("#commercial").load("views/commercial.html");
     });
 });
 $(document).ready(function () {
-    $("#fi").on("click", function () { 
+    $("#fi").on("click", function () {
         $("#film").load("views/film.html");
     });
 });
