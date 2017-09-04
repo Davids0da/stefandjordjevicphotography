@@ -29,6 +29,10 @@
 
 .navbar {
     margin-top: 160px;
+    position:static;
+}
+#film {
+    position: static;
 }
 body {
     font-family: Font1;

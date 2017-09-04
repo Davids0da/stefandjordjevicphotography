@@ -23,7 +23,7 @@ function larges2() {
         if ($(window).width() <= 1025) {
             $('.first-right').css('left', videoLeftandRightSize);
             $('.first-photo-right').css('left', videoLeftandRightSize);
-            $('.first-right , .first-photo-right').css('top',960);
+            $('.first-right , .first-photo-right').css('top',1430);
             $('.first-text-right').css('left', videoLeftandRightSize);
             var windowWidth = window.innerWidth;
             var valueForVideoSize = windowWidth - ((windowWidth * 15) / 100);
@@ -94,14 +94,14 @@ function largom1() {
     $('.second-text-right').css('top', 730);
     $('.t-text-left').css('top', 1200);
     if ($(window).width() <= 1025) {
-        $('.first-text-left').css('top', 520);
-        $('.first-text-right').css('top', 1470);
-        $('.second-left , .second-photo-left').css('top',2000);
-        $('.second-right , .second-photo-right').css('top',2850);
-        $('.second-text-left').css('top', 2520);
-        $('.second-text-right').css('top', 3370);
-        $('.t-left , .t-photo-left').css('top',3730);
-        $('.t-text-left').css('top', 4260);
+        $('.first-text-left').css('top', 1010);
+        $('.first-text-right').css('top', 1945);
+        $('.second-left , .second-photo-left').css('top',2450);
+        $('.second-right , .second-photo-right').css('top',3280);
+        $('.second-text-left').css('top', 2960);
+        $('.second-text-right').css('top', 3785);
+        $('.t-left , .t-photo-left').css('top',4130);
+        $('.t-text-left').css('top', 4630);
     }
 };
 
