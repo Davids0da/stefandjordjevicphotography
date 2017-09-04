@@ -318,11 +318,10 @@ font-size: 15px;
     }
     .margins-juve {
        font-size: 35px;
-       margin-left: 20px;
+       margin-left: 0 !important;
        margin-bottom: 150px;
     }
 
-     
 
 }
 
@@ -537,9 +536,8 @@ font-size: 15px;
 }
 
 .margins-juve {
-    margin-left: 45px !important;
+    margin-left: 45px;
 }
-
 
 .f-left { 
     position: absolute;
