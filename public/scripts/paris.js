@@ -69,4 +69,18 @@ function functionForOverflow1() {
     var heightForOverflowDivs = window.innerHeight - marginInPercent;
     $('#slider-thumbs4').css('height', heightForOverflowDivs);
     $('#slider-thumbs4').css('overflow', 'scroll');
+
 };
+
+$(document).keydown(function(e) {
+    if (e.keyCode === 37) {
+       // Previous
+       $(".carousel-control.left").click();
+       return false;
+    }
+    if (e.keyCode === 39) {
+       // Next
+       $(".carousel-control.right").click();
+       return false;
+    }
+});

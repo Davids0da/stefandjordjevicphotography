@@ -31,9 +31,6 @@
     margin-top: 160px;
     position:static;
 }
-#film {
-    position: static;
-}
 body {
     font-family: Font1;
 }
@@ -245,6 +242,9 @@ font-size: 15px;
         font-size: 35px !important;
         margin-right:50px;
         margin-bottom:150px;
+    }
+    #film {
+        position: static;
     }
     .video-under-title {
         font-size: 25px;
@@ -579,3 +579,4 @@ font-size: 15px;
 .double {
     height: 208px;
 }
+
