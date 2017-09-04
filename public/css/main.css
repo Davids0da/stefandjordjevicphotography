@@ -225,6 +225,9 @@ font-size: 15px;
 
 /* big landscape tablets, laptops, and desktops */
 @media (max-width:1025px) {  
+    .margins {
+        font-size: 30px !important;
+    }
     .slideshow-photos {
         width: 900px !important;
     }
@@ -235,19 +238,34 @@ font-size: 15px;
         left: 55px;
         position: absolute;
     }
+    #rights-text{
+       font-size: 30px;
+    }
+    #see-all {
+        position: absolute;
+        left: 880px;
+        width: 32px;
+        display: none;
+    }
+    #see-all-text {
+        font-size: 30px;
+        position: absolute;
+        left: 780px;
+        display:none;
+    }
     
     .soc-icon1 {
-        width: 14px;
+        width: 32px;
         position: absolute;
-        left: 160px;
+        left: 310px;
     }
     .soc-icon2 {
-        width: 14px;
+        width: 32px;
         position: absolute;
-        left: 180px;
+        left: 360px;
     } 
     .margin , #photography , #biography , #video{
-        font-size: 25px !important;
+        font-size: 30px !important;
     }
     #bio {
         text-align: center;
@@ -259,6 +277,14 @@ font-size: 15px;
     #slideshow {
         margin-top: 100px;
     }
+    #click-on-name {
+        font-size: 40px;
+    }
+    .margins-juve {
+       font-size: 25px;
+       margin-left: 20px;
+    }
+
      
 
 }
@@ -369,10 +395,12 @@ font-size: 15px;
     margin: 0;
     width: 470px;
 }
-#margins {
-    margin-right: 35px;
+.margins {
+    margin-left: 35px;
 }
-
+.margins-juve {
+    margin-right: 35px
+}
 .first-left1 { 
     position: absolute;
     width: 470px;
