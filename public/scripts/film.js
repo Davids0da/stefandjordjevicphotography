@@ -68,12 +68,12 @@ $(document).ready(largom1);
 $(window).resize(largom1);
 function largom1() {
     $('.second-left , .second-photo-left , .second-photo-right , .second-right').css('top',480);
-    $('.t-left , .t-photo-left').css('top',900);
+    $('.t-left , .t-photo-left').css('top',950);
     $('.first-text-left').css('top', 250);
     $('.first-text-right').css('top', 250);
     $('.second-text-left').css('top', 730);
     $('.second-text-right').css('top', 730);
-    $('.t-text-left').css('top', 1150);
+    $('.t-text-left').css('top', 1200);
 };
 
 

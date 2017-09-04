@@ -21,7 +21,7 @@ function larg() {
         $('.soc-icon2').css('bottom', marginInPercentMobile + 10);
         $('#see-all').css('bottom', marginForSeeAll / 2 + 10);
         $('#see-all-text').css('bottom', marginForSeeAll / 2);
-        $('#see-all').css('bottom', marginInPercentMobile + 14);
+        $('#see-all').css('bottom', marginInPercentMobile + 8);
         $('#see-all-text').css('bottom', marginInPercentMobile);
     }
 };

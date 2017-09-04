@@ -6,10 +6,22 @@
 .carousel .right:hover {
     cursor: url("../images/next.png"), default !important;
  }
+ .carousel .right:active {
+    cursor: url("../images/next.png"), default !important;
+ }
+ .carousel .right:visited {
+    cursor: url("../images/next.png"), default !important;
+ }
  
  .carousel .left:hover {
    cursor: url("../images/back.png"), default !important
  }
+ .carousel .left:active {
+    cursor: url("../images/back.png"), default !important
+  }
+  .carousel .left:visited {
+    cursor: url("../images/back.png"), default !important
+  }
 
  img:hover {
     cursor: default !important;
@@ -226,8 +238,18 @@ font-size: 15px;
 /* big landscape tablets, laptops, and desktops */
 @media (max-width:1025px) {  
     .margins {
-        font-size: 30px !important;
+        font-size: 35px !important;
         margin-right:50px;
+        margin-bottom:150px;
+    }
+    .video-under-title {
+        font-size: 25px;
+    }
+    .last-text {
+        margin-bottom: 200px;
+    }
+    .video-title {
+        font-size: 30px;
     }
     .slideshow-photos {
         width: 900px !important;
@@ -258,17 +280,16 @@ font-size: 15px;
     }
     #see-all {
         position: absolute;
-        left: 880px;
-        width: 32px;
+        left: 850px;
+        width: 45px;
         display: none;
     }
     #see-all-text {
         font-size: 30px;
         position: absolute;
-        left: 780px;
+        left: 750px;
         display:none;
     }
-    
     .soc-icon1 {
         width: 32px;
         position: absolute;
@@ -280,7 +301,7 @@ font-size: 15px;
         left: 360px;
     } 
     .margin , #photography , #biography , #video{
-        font-size: 30px !important;
+        font-size: 35px !important;
     }
     #bio {
         text-align: center;
@@ -296,8 +317,9 @@ font-size: 15px;
         font-size: 40px;
     }
     .margins-juve {
-       font-size: 30px;
+       font-size: 35px;
        margin-left: 20px;
+       margin-bottom: 150px;
     }
 
      
@@ -413,9 +435,7 @@ font-size: 15px;
 .margins {
     margin-left: 35px;
 }
-.margins-juve {
-    margin-right: 35px
-}
+
 .first-left1 { 
     position: absolute;
     width: 470px;
@@ -516,3 +536,6 @@ font-size: 15px;
     position: absolute;
 }
 
+.margins-juve {
+    margin-left: 45px !important;
+}
