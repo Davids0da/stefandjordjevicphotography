@@ -109,14 +109,17 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
 
 
 // Fuctions for see-all and navigation in album
-$('.sub-menu-photo a').click(function () {
-    $("#see-all").fadeIn(400);
-    $("#see-all-text").fadeIn(400);
+$(document).ready(function(){
+    $('.sub-menu-photo a').click(function () {
+        $("#see-all").fadeIn(400);
+        $("#see-all-text").fadeIn(400);
+    });
+    $('#name a , .sub-menu-video a , #biography a').click(function (e) {
+        $("#see-all").fadeOut(400);
+        $("#see-all-text").fadeOut(400);
+    });
 });
-$('#name a , .sub-menu-video a , #biography a').click(function (e) {
-    $("#see-all").fadeOut(400);
-    $("#see-all-text").fadeOut(400);
-});
+
 
 // Function for see-all
 $('.sub-menu-photo a').click(function (e) {

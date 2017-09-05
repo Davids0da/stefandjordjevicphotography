@@ -19,7 +19,7 @@ function larges2() {
             $('.first-photo-right').css('right',videoLeftandRightSize);
             $('.first-text-left').css('left',videoLeftandRightSize);
             $('.first-text-right').css('right',videoLeftandRightSize);
-        }
+        } 
         if ($(window).width() <= 1025) {
             $('.first-right').css('left', videoLeftandRightSize);
             $('.first-photo-right').css('left', videoLeftandRightSize);
@@ -100,8 +100,8 @@ function largom1() {
         $('.second-right , .second-photo-right').css('top',3280);
         $('.second-text-left').css('top', 2960);
         $('.second-text-right').css('top', 3785);
-        $('.t-left , .t-photo-left').css('top',4130);
-        $('.t-text-left').css('top', 4630);
+        $('.t-left , .t-photo-left').css('top',4050);
+        $('.t-text-left').css('top', 4550);
     }
 };
 
@@ -155,3 +155,9 @@ function functionForOverflow() {
     $('#film').css('height',heightForOverflowDivs);
     $('#film').css('overflow', 'scroll');
 };
+
+$('#first-photo-right').click(function() {
+    var iframe = $('#first-right')[0];
+    var player = $f(iframe);
+    player.api('play');
+});
