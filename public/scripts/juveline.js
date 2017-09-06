@@ -23,9 +23,9 @@ jQuery(document).ready(function ($) {
 
 // Carousel slide next with click on image 
 $(document).ready(function(){
-    $("#myCarousel1 img").click(function() {
+    $("#myCarousel2 img").click(function() {
         var currentIndex = $('div.active').index();
-        $("#myCarousel1").carousel(++currentIndex);
+        $("#myCarousel2").carousel(++currentIndex);
       });
 }); 
 
