@@ -156,7 +156,7 @@ function functionForOverflow() {
     $('#film').css('overflow', 'scroll');
 };
 
-
+$(document).ready(function(){
     $('#second-photo-left').click(function() {
         var iframe = $('#second-left')[0];
         var player = $f(iframe);
@@ -172,6 +172,6 @@ function functionForOverflow() {
         var player = $f(iframe);
         player.api('play');
     });     
-
+});
 
 
