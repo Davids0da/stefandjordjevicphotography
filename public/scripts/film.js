@@ -156,7 +156,7 @@ function functionForOverflow() {
     $('#film').css('overflow', 'scroll');
 };
 
-$(document).ready(function(){
+
     $('#second-photo-left').click(function() {
         var iframe = $('#second-left')[0];
         var player = $f(iframe);
@@ -172,13 +172,6 @@ $(document).ready(function(){
         var player = $f(iframe);
         player.api('play');
     });     
-});
 
-$(document).ready(function() {
-    $('#t-photo-left').on('click', function(ev) {
-   
-      $("#t-left")[0].src += "&autoplay=1";
-      ev.preventDefault();
-   
-    });
-  });
+
+
