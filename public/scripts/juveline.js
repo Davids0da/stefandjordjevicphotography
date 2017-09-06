@@ -68,3 +68,28 @@ $(document).keydown(function(e) {
        return false;
     }
 });
+
+
+$("#myCarousel2").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > 5) {
+            $("#myCarousel2").carousel('next');
+        }
+        else if (Math.floor(xClick - xMove) < -5) {
+            $("#myCarousel2").carousel('prev');
+        }
+    });
+    $("#myCarousel2").on("touchend", function () {
+        $(this).off("touchmove");
+    });
+});
+
+
+$(document).ready(function () {
+    $("#carousel-bounding-box3").fadeOut(1);
+    $('#loader-wrapper2').delay(5000).fadeOut(500, function () {
+        $("#carousel-bounding-box3").fadeIn(600);
+    });
+}); 

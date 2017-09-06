@@ -22,12 +22,12 @@ jQuery(document).ready(function ($) {
 });
 
 // Carousel slide next with click on image 
-$(document).ready(function(){
-    $("#myCarousel img").click(function() {
+$(document).ready(function () {
+    $("#myCarousel img").click(function () {
         var currentIndex = $('div.active').index();
         $("#myCarousel").carousel(++currentIndex);
-      });
-}); 
+    });
+});
 
 $(document).ready(function () {
     var album = $('#bor').width();
@@ -54,15 +54,38 @@ function responsiveImage1() {
     $('.main-page-photo').css('width', x2);
 };
 
-$(document).keydown(function(e) {
+$(document).keydown(function (e) {
     if (e.keyCode === 37) {
-       // Previous
-       $(".carousel-control.left").click();
-       return false;
+        // Previous
+        $(".carousel-control.left").click();
+        return false;
     }
     if (e.keyCode === 39) {
-       // Next
-       $(".carousel-control.right").click();
-       return false;
+        // Next
+        $(".carousel-control.right").click();
+        return false;
     }
 });
+
+$("#myCarousel").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > 5) {
+            $("#myCarousel").carousel('next');
+        }
+        else if (Math.floor(xClick - xMove) < -5) {
+            $("#myCarousel").carousel('prev');
+        }
+    });
+    $("#myCarousel").on("touchend", function () {
+        $(this).off("touchmove");
+    });
+});
+
+$(document).ready(function () {
+    $("#carousel-bounding-box1").fadeOut(1);
+    $('#loader-wrapper').delay(5000).fadeOut(500, function () {
+        $("#carousel-bounding-box1").fadeIn(600);
+    });
+}); 

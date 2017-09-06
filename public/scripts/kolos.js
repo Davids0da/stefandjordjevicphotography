@@ -22,12 +22,12 @@ jQuery(document).ready(function ($) {
 });
 
 // Carousel slide next with click on image 
-$(document).ready(function(){
-    $("#myCarousel1 img").click(function() {
+$(document).ready(function () {
+    $("#myCarousel1 img").click(function () {
         var currentIndex = $('div.active').index();
         $("#myCarousel1").carousel(++currentIndex);
-      });
-}); 
+    });
+});
 
 // Function for responisve left and right arrow 
 $(document).ready(function () {
@@ -48,22 +48,46 @@ $(document).ready(function () {
 $(document).ready(responsiveImage);
 $(window).resize(responsiveImage);
 function responsiveImage() {
-    var marginInPercent = ((window.innerHeight * 18) / 100 ) / 2; 
+    var marginInPercent = ((window.innerHeight * 18) / 100) / 2;
     var marginForSeeAll = marginInPercent * 2;
-    var x1 = window.innerHeight - ( marginInPercent * 2 );
-    var x2 = ( x1 * 100 ) / 66.7;
-    $('.main-page-photo').css('width',x2);
+    var x1 = window.innerHeight - (marginInPercent * 2);
+    var x2 = (x1 * 100) / 66.7;
+    $('.main-page-photo').css('width', x2);
 };
 
-$(document).keydown(function(e) {
+$(document).keydown(function (e) {
     if (e.keyCode === 37) {
-       // Previous
-       $(".carousel-control.left").click();
-       return false;
+        // Previous
+        $(".carousel-control.left").click();
+        return false;
     }
     if (e.keyCode === 39) {
-       // Next
-       $(".carousel-control.right").click();
-       return false;
+        // Next
+        $(".carousel-control.right").click();
+        return false;
     }
 });
+
+
+$("#myCarousel1").on("touchstart", function (event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function (event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if (Math.floor(xClick - xMove) > 5) {
+            $("#myCarousel1").carousel('next');
+        }
+        else if (Math.floor(xClick - xMove) < -5) {
+            $("#myCarousel1").carousel('prev');
+        }
+    });
+    $("#myCarousel1").on("touchend", function () {
+        $(this).off("touchmove");
+    });
+});
+
+$(document).ready(function () {
+    $("#carousel-bounding-box2").fadeOut(1);
+    $('#loader-wrapper1').delay(5000).fadeOut(500, function () {
+        $("#carousel-bounding-box2").fadeIn(600);
+    });
+}); 
