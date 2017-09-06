@@ -95,6 +95,10 @@ a:focus {
     position: absolute;
     left: 160px;
 }
+
+.thumbnail-a {
+    width: 146px;
+}
 .soc-icon2 {
     width: 14px;
     position: absolute;
@@ -325,8 +329,9 @@ font-size: 15px;
        margin-left: 0 !important;
        margin-bottom: 150px;
     }
-
-
+    .thumbnail-a {
+        width: 124px;
+    }
 }
 
 /* hi-res laptops and desktops */
@@ -582,8 +587,4 @@ font-size: 15px;
 
 ::-webkit-scrollbar { 
     display: none; 
-}
-
-.thumbnail-a {
-    width: 146px;
 }
