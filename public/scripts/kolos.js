@@ -34,13 +34,13 @@ $(document).ready(function () {
     var album = $('#kolos').width();
     var aaa = $('.main-page-photo').width();
     var finale = (album - aaa) / 2;
-    $('.carousel-control').css('width', finale);
+    $('.kolos-cc').css('width', finale);
     $('#myCarousel1').on('slid.bs.carousel', function () {
-        var album = $('#paris').width();
+        var album = $('#kolos').width();
         var slideFrom = $(this).find('.active').index();
         var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
         var final = (album - widthOfPhoto) / 2;
-        $('.carousel-control').css('width', final);
+        $('.kolos-cc').css('width', final);
     })
 });
 

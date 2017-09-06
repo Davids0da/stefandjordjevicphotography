@@ -155,9 +155,3 @@ function functionForOverflow() {
     $('#film').css('height',heightForOverflowDivs);
     $('#film').css('overflow', 'scroll');
 };
-
-$('#first-photo-right').click(function() {
-    var iframe = $('#first-right')[0];
-    var player = $f(iframe);
-    player.api('play');
-});

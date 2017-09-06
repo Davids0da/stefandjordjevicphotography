@@ -34,13 +34,13 @@ $(document).ready(function () {
     var album = $('#bor').width();
     var aaa = $('.main-page-photo').width();
     var finale = (album - aaa) / 2;
-    $('.carousel-control').css('width', finale);
+    $('.bor-cc').css('width', finale);
     $('#myCarousel').on('slid.bs.carousel', function () {
-        var album = $('#paris').width();
+        var album = $('#bor').width();
         var slideFrom = $(this).find('.active').index();
         var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
         var final = (album - widthOfPhoto) / 2;
-        $('.carousel-control').css('width', final);
+        $('.bor-cc').css('width', final);
     })
 });
 

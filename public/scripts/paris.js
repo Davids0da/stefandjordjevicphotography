@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
         } catch (e) {
             console.log('Regex failed!', e);
         }
-    });
+    }); 
 });
 
 // Carousel slide next with click on image 
@@ -31,17 +31,18 @@ $(document).ready(function () {
 
 
 // Function for just Paris photo album for responsive left and right arrows 
-var album = $('#paris').width();
-var aaa = $('.main-page-photo-height').width();
-var finale = (album - aaa) / 2;
-$('.carousel-control').css('width', finale);
-$('#myCarousel3').on('slid.bs.carousel', function (e) {
-    e.preventDefault(e);
-    var album = $('#paris').width();
-    var slideFrom = $(this).find('.active').index();
-    var widthOfPhoto = $('.item:eq(' + slideFrom + ') img').width();
-    var final = (album - widthOfPhoto) / 2;
-    $('.carousel-control').css('width', final);
+$(document).ready(function(){
+    var album1 = $('#paris').width();
+    var aaa1 = $('.main-page-photo-height').width();
+    var finale1 = (album1 - aaa1) / 2;
+    $('.paris-cc').css('width', finale1);
+    $('#myCarousel3').on('slid.bs.carousel', function (e) {
+        var album1 = $('#paris').width();
+        var slideFrom1 = $(this).find('.active').index();
+        var widthOfPhoto1 = $('.item:eq(' + slideFrom1 + ') img').width();
+        var final1 = (album1 - widthOfPhoto1) / 2;
+        $('.paris-cc').css('width', final1);
+    });
 });
 
 

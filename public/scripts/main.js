@@ -29,7 +29,7 @@ function larg() {
 
 //Load arrows
 var img1 = new Image();
-var img2 = new Image(); 
+var img2 = new Image();
 img1.src = "images/back.png";
 img2.src = "images/next.png";
 
@@ -109,7 +109,7 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
 
 
 // Fuctions for see-all and navigation in album
-$(document).ready(function(){
+$(document).ready(function () {
     $('.sub-menu-photo a').click(function () {
         $("#see-all").fadeIn(400);
         $("#see-all-text").fadeIn(400);
@@ -190,6 +190,18 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#fi").on("click", function () {
         $("#film").load("views/film.html");
+    });
+});
+
+$(document).ready(function () {
+    var arrayOfValues = [];
+    $('.sub-menu-photo a , .sub-menu-video a').click(function (e) {
+        let top = $(this).attr('href');
+        arrayOfValues.push(top);
+        var unloadDiv = arrayOfValues[arrayOfValues.length - 2];
+        setTimeout(function(){
+            $(unloadDiv).html("");
+            }, 1000); 
     });
 });
 
