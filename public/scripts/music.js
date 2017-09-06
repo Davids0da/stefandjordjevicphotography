@@ -51,4 +51,16 @@ function largomen() {
     }
 };
 
+$(document).ready(function(){
+    $('#first-photo-left1').click(function() {
+        var iframe = $('#first-left1')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+    $('#first-photo-right1').click(function() {
+        var iframe = $('#first-right1')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+});
 

@@ -155,3 +155,30 @@ function functionForOverflow() {
     $('#film').css('height',heightForOverflowDivs);
     $('#film').css('overflow', 'scroll');
 };
+
+$(document).ready(function(){
+    $('#second-photo-left').click(function() {
+        var iframe = $('#second-left')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+    $('#second-photo-right').click(function() {
+        var iframe = $('#second-right')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+    $('#first-photo-right').click(function() {
+        var iframe = $('#first-right')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });     
+});
+
+$(document).ready(function() {
+    $('#t-photo-left').on('click', function(ev) {
+   
+      $("#t-left")[0].src += "&autoplay=1";
+      ev.preventDefault();
+   
+    });
+  });

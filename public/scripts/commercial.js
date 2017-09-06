@@ -101,4 +101,25 @@ function largomende3() {
     }
 };
 
-
+$(document).ready(function(){
+    $('#f-photo-left').click(function() {
+        var iframe = $('#f-left')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+    $('#f-photo-right').click(function() {
+        var iframe = $('#f-right')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+    $('#second-photo-right2').click(function() {
+        var iframe = $('#second-right2')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+    $('#second-photo-left2').click(function() {
+        var iframe = $('#second-left2')[0];
+        var player = $f(iframe);
+        player.api('play');
+    });
+});
