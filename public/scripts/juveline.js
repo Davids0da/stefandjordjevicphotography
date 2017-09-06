@@ -22,10 +22,10 @@ jQuery(document).ready(function ($) {
 });
 
 // Carousel slide next with click on image 
-var number = 0;
 $(document).ready(function(){
-    $("#myCarousel2 img").click(function() {
-        $("#myCarousel2").carousel(++number);
+    $("#myCarousel1 img").click(function() {
+        var currentIndex = $('div.active').index();
+        $("#myCarousel1").carousel(++currentIndex);
       });
 }); 
 

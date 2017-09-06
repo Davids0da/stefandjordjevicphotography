@@ -22,12 +22,12 @@ jQuery(document).ready(function ($) {
 });
 
 // Carousel slide next with click on image 
-var number = 0;
-$(document).ready(function () {
-    $("#myCarousel3 img").click(function () {
-        $("#myCarousel3").carousel(++number);
-    });
-});
+$(document).ready(function(){
+    $("#myCarousel1 img").click(function() {
+        var currentIndex = $('div.active').index();
+        $("#myCarousel1").carousel(++currentIndex);
+      });
+}); 
 
 
 // Function for just Paris photo album for responsive left and right arrows 

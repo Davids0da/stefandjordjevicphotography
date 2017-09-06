@@ -22,13 +22,12 @@ jQuery(document).ready(function ($) {
 });
 
 // Carousel slide next with click on image 
-var number = 0;
-$(document).ready(function () {
-    $("#myCarousel img").click(function () {
-        $("#myCarousel").carousel(++number);
-    });
-});
-
+$(document).ready(function(){
+    $("#myCarousel1 img").click(function() {
+        var currentIndex = $('div.active').index();
+        $("#myCarousel1").carousel(++currentIndex);
+      });
+}); 
 
 $(document).ready(function () {
     var album = $('#bor').width();
