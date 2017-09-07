@@ -256,22 +256,22 @@ $('.sub-menu-photo a').click(function (e) {
         $('#see-all-box').click(function () {
             if (toes == "bo") {
                 $('#carousel-bounding-box1').fadeOut(500, function () {
-                    $("#slider-thumbs1").fadeIn(500).css("display", "inline");
+                    $("#slider-thumbs1").fadeIn(500);
                 });
             }
             else if (toes == "ko") {
                 $('#carousel-bounding-box2').fadeOut(500, function () {
-                    $("#slider-thumbs2").fadeIn(500).css("display", "inline");
+                    $("#slider-thumbs2").fadeIn(500);
                 });
             }
             else if (toes == "ci") {
                 $('#carousel-bounding-box3').fadeOut(500, function () {
-                    $("#slider-thumbs3").fadeIn(500).css("display", "inline");
+                    $("#slider-thumbs3").fadeIn(500);
                 });
             }
             else if (toes == "ju") {
                 $('#carousel-bounding-box4').fadeOut(500, function () {
-                    $("#slider-thumbs4").fadeIn(500).css("display", "inline");
+                    $("#slider-thumbs4").fadeIn(500);
                 });
             }
         });
