@@ -43,7 +43,7 @@ function preload() {
 preload(
     "images/pocetna/01.jpg",
     "images/pocetna/02.jpg",
-    
+
     "images/kolos-min/01.jpg",
     "images/kolos-min/02.jpg",
     "images/kolos-min/03.jpg",
@@ -239,8 +239,14 @@ $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(functi
 // Fuctions for see-all and navigation in album
 $(document).ready(function () {
     $('.sub-menu-photo a').click(function () {
-        $("#see-all").delay(5000).fadeIn(400);
-        $("#see-all-text").delay(5000).fadeIn(400);
+        if ($('#see-all').is(":visible")) {
+            $("#see-all").fadeOut(200).delay(4500).fadeIn(400);
+            $("#see-all-text").fadeOut(200).delay(4500).fadeIn(400);
+        }
+        else {
+            $("#see-all").delay(5000).fadeIn(400);
+            $("#see-all-text").delay(5000).fadeIn(400);
+        }
     });
     $('#name a , .sub-menu-video a , #biography a').click(function (e) {
         $("#see-all").fadeOut(400);
@@ -252,7 +258,7 @@ $(document).ready(function () {
 // Function for see-all
 $('.sub-menu-photo a').click(function (e) {
     let toes = $(this).attr('id');
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('#see-all-box').click(function () {
             if (toes == "bo") {
                 $('#carousel-bounding-box1').fadeOut(500, function () {
@@ -329,9 +335,9 @@ $(document).ready(function () {
         let top = $(this).attr('href');
         arrayOfValues.push(top);
         var unloadDiv = arrayOfValues[arrayOfValues.length - 2];
-        setTimeout(function(){
+        setTimeout(function () {
             $(unloadDiv).html("");
-            }, 1000); 
+        }, 1000);
     });
 });
 
