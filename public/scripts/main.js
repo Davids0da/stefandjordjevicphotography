@@ -253,8 +253,8 @@ $(document).ready(function () {
 $('.sub-menu-photo a').click(function (e) {
     let toes = $(this).attr('id');
     $(document).ready(function(){
-        $('#see-all-box').click(function () {
             if (toes == "bo") {
+                
                 $('#carousel-bounding-box1').fadeOut(500, function () {
                     $("#slider-thumbs1").fadeIn(500).css("display", "inline");
                 });
@@ -274,7 +274,6 @@ $('.sub-menu-photo a').click(function (e) {
                     $("#slider-thumbs4").fadeIn(500).css("display", "inline");
                 });
             }
-        });
     });
 });
 
@@ -288,7 +287,7 @@ setInterval(function () {
 
 // Ayax for html albums
 $(document).ready(function () {
-    $("#ko").on("click", function () {
+    $("#ko").on("click ", function () {
         $("#kolos").load("views/kolos.html");
     });
 });

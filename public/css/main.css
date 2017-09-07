@@ -24,7 +24,6 @@
   }
 
 
-
  img:hover {
     cursor: default !important;
  }
@@ -723,3 +722,6 @@ font-size: 15px;
 }
 
 
+#photography , #video , #biography , #ko , #bo , #ci , #ju , #fi , #mu , #fo {
+    cursor: pointer;
+}
