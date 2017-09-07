@@ -205,7 +205,7 @@ $(document).ready(function () {
 var array = [];
 array.push('#mains')
 $(document).ready(function () {
-    $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').on('touchstart click',function (e) {
+    $('#name a , .sub-menu-photo a , .sub-menu-video a , #biography a').click(function (e) {
         e.preventDefault(e);
         let to = $(this).attr('href');
         array.push(to);
