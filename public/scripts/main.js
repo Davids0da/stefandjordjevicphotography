@@ -252,27 +252,29 @@ $(document).ready(function () {
 // Function for see-all
 $('.sub-menu-photo a').click(function (e) {
     let toes = $(this).attr('id');
-    $('#see-all-box').click(function () {
-        if (toes == "bo") {
-            $('#carousel-bounding-box1').fadeOut(500, function () {
-                $("#slider-thumbs1").fadeIn(500).css("display", "inline");
-            });
-        }
-        else if (toes == "ko") {
-            $('#carousel-bounding-box2').fadeOut(500, function () {
-                $("#slider-thumbs2").fadeIn(500).css("display", "inline");
-            });
-        }
-        else if (toes == "ci") {
-            $('#carousel-bounding-box3').fadeOut(500, function () {
-                $("#slider-thumbs3").fadeIn(500).css("display", "inline");
-            });
-        }
-        else if (toes == "ju") {
-            $('#carousel-bounding-box4').fadeOut(500, function () {
-                $("#slider-thumbs4").fadeIn(500).css("display", "inline");
-            });
-        }
+    $(document).ready(function(){
+        $('#see-all-box').click(function () {
+            if (toes == "bo") {
+                $('#carousel-bounding-box1').fadeOut(500, function () {
+                    $("#slider-thumbs1").fadeIn(500).css("display", "inline");
+                });
+            }
+            else if (toes == "ko") {
+                $('#carousel-bounding-box2').fadeOut(500, function () {
+                    $("#slider-thumbs2").fadeIn(500).css("display", "inline");
+                });
+            }
+            else if (toes == "ci") {
+                $('#carousel-bounding-box3').fadeOut(500, function () {
+                    $("#slider-thumbs3").fadeIn(500).css("display", "inline");
+                });
+            }
+            else if (toes == "ju") {
+                $('#carousel-bounding-box4').fadeOut(500, function () {
+                    $("#slider-thumbs4").fadeIn(500).css("display", "inline");
+                });
+            }
+        });
     });
 });
 

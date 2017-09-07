@@ -280,6 +280,11 @@ font-size: 15px;
     .slideshow-photos {
         width: 900px !important;
     }
+    .main-page-photo {
+        width: 900px !important;
+        margin-top: 100px !important;
+    }
+   
     .thumbnail {
         width: 130px;
       }
@@ -368,9 +373,7 @@ font-size: 15px;
     #text-bio , #mail {
         font-size: 30px
     }
-    #slideshow {
-        margin-top: 100px;
-    }
+
     #click-on-name {
         font-size: 40px;
     }
