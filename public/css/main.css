@@ -23,6 +23,8 @@
     cursor: url("../images/back.png"), default !important
   }
 
+
+
  img:hover {
     cursor: default !important;
  }
@@ -291,34 +293,36 @@ font-size: 15px;
         left: 55px;
         position: absolute;
     }
+    #mu {
+        white-space:nowrap;
+    }
     .margin  {
         float:left;
-        margin-top: -50px;
+        margin-top: -64px;
     }
     .margin1 {
-        margin-left: 80px;
+        margin-left: 100px;
     }
     .margin2 {
-        margin-left: 200px;
+        margin-left: 250px;
     }
     .margin3 {
-        margin-left: 280px;
+        margin-left: 350px;
     }
 
     .margin4 {
-        margin-left: 440px;
+        margin-left: 550px;
     }
     .margin5 {
-        margin-left: 80px;
+        margin-left: 100px;
     }
     .margin6 {
-        margin-left: 180px;
+        margin-left: 220px;
     }
 
     .margin7 {
-        margin-left: 400px;
+        margin-left: 500px;
     }
-
 
 
     #position-fixed {
@@ -355,7 +359,7 @@ font-size: 15px;
         left: 360px;
     } 
     .margin , #photography , #biography , #video{
-        font-size: 35px !important;
+        font-size: 45px !important;
     }
     #bio {
         text-align: center;

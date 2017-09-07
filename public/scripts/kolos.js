@@ -87,7 +87,7 @@ $("#myCarousel1").on("touchstart", function (event) {
 
 $(document).ready(function () {
     $("#carousel-bounding-box2").fadeOut(1);
-    $('#loader-wrapper1').delay(3000).fadeOut(500, function () {
+    $('#loader-wrapper1').delay(4000).fadeOut(500, function () {
         $("#carousel-bounding-box2").fadeIn(600);
     });
 }); 
