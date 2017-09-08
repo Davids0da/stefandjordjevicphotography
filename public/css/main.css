@@ -270,6 +270,12 @@ font-size: 15px;
     .video-under-title {
         font-size: 25px;
     }
+    .col-md-5 {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 820px !important;
+    }
     .last-text {
         margin-bottom: 200px;
     }
