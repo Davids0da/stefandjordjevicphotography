@@ -301,7 +301,7 @@ font-size: 15px;
         white-space:nowrap;
     }
     .margin  {
-        float:left;
+    
         margin-top: -64px;
     }
     .margin1 {
@@ -729,5 +729,9 @@ font-size: 15px;
         width: 100%;
         background: white;
         z-index: 1001;
+    }
+    .main-page-photo {
+        width: 830px !important;
+        margin-top: 100px !important;
     }
 }
