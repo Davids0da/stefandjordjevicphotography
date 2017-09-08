@@ -23,7 +23,7 @@ function larges2() {
         if ($(window).width() <= 1025) {
             $('.first-right').css('left', videoLeftandRightSize);
             $('.first-photo-right').css('left', videoLeftandRightSize);
-            $('.first-right , .first-photo-right').css('top',1235);
+            $('.first-right , .first-photo-right').css('top',1255);
             $('.first-text-right').css('left', videoLeftandRightSize);
             var windowWidth = window.innerWidth;
             var valueForVideoSize = windowWidth - ((windowWidth * 15) / 100);
