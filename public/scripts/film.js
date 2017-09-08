@@ -95,13 +95,13 @@ function largom1() {
     $('.t-text-left').css('top', 1175);
     if ($(window).width() <= 1025) {
         $('.first-text-left').css('top', 900);
-        $('.first-text-right').css('top', 1740);
-        $('.second-left , .second-photo-left').css('top',2100);
-        $('.second-right , .second-photo-right').css('top',2835);
-        $('.second-text-left').css('top', 2610);
-        $('.second-text-right').css('top', 3345);
-        $('.t-left , .t-photo-left').css('top',3660);
-        $('.t-text-left').css('top', 4170);
+        $('.first-text-right').css('top', 1755);
+        $('.second-left , .second-photo-left').css('top',2140);
+        $('.second-right , .second-photo-right').css('top',2885);
+        $('.second-text-left').css('top', 2640);
+        $('.second-text-right').css('top', 3390);
+        $('.t-left , .t-photo-left').css('top',3720);
+        $('.t-text-left').css('top', 4225);
     }
 };
 
