@@ -283,6 +283,9 @@ font-size: 15px;
         width: 900px !important;
         margin-top: 100px !important;
     }
+    .main-page-photo-height  {
+        margin-top: 100px !important;
+    }
    
     .thumbnail {
         width: 130px;
@@ -374,7 +377,7 @@ font-size: 15px;
     }
 
     #click-on-name {
-        font-size: 40px;
+        font-size: 60px;
     }
     .margins-juve {
        font-size: 35px;
@@ -734,4 +737,10 @@ font-size: 15px;
         width: 830px !important;
         margin-top: 100px !important;
     }
+    .main-page-photo-height {
+        width: 370px !important
+   
+    }
+    
+
 }
