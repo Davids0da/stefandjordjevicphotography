@@ -259,6 +259,9 @@ font-size: 15px;
     #film {
         position: static;
     }
+    #commercial {
+        position: static;
+    }
     #loader , #loader1 , #loader2 , #loader3 {
         position: absolute;
         top: 50%;
@@ -459,6 +462,18 @@ font-size: 15px;
     height: 250px;
     z-index: 1000;
 }
+.t-right { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.t-photo-right { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
 
 .second-right { 
     position: absolute;
@@ -473,8 +488,63 @@ font-size: 15px;
     z-index: 1000;
 }
 
+.f-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
 
+.f-photo-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
 
+.fi-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.fi-photo-left { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.f-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.f-photo-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.f-right2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.f-photo-right2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+#f-text-left2 {
+    position: absolute;
+}
+#f-text-right2 {
+    position: absolute;
+}
 #first-text-left {
     position: absolute;
 }
@@ -488,6 +558,15 @@ font-size: 15px;
     position: absolute;
 }
 #t-text-left {
+    position: absolute;
+}
+#t-text-right {
+    position: absolute;
+}
+#f-text-left {
+    position: absolute;
+}
+#fi-text-left {
     position: absolute;
 }
 .text-juve {
@@ -516,6 +595,19 @@ font-size: 15px;
     width: 470px;
     height: 250px;
     z-index: 1000;
+}
+
+.s-photo-left1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.s-left1 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
 }
 
 .first-right1 { 
@@ -562,6 +654,9 @@ font-size: 15px;
 #first-text-left1 {
     position: absolute;
 }
+#s-text-left1 {
+    position: absolute;
+}
 #first-text-right1 {
     position: absolute;
 }
@@ -605,6 +700,47 @@ font-size: 15px;
     position: absolute;
 }
 
+#t-text-left2 {
+    position: absolute;
+}
+#t-text-right2{
+    position: absolute;
+}
+
+.t-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.t-photo-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.t-right2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.t-photo-right2 {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+#t-text-left2 {
+    position: absolute;
+}
+#t-text-right2 {
+    position: absolute;
+}
+
+
 .margins-juve {
     margin-left: 45px;
 }
@@ -635,10 +771,45 @@ font-size: 15px;
     z-index: 1000;
 }
 
+.fi-right { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.fi-photo-right {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
+.fifth-left2 { 
+    position: absolute;
+    width: 470px;
+    height: 250px;
+}
+
+.fifth-photo-left2 {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    z-index: 1000;
+}
+
 #f-text-left {
     position: absolute;
 }
+#fifth-text-left2 {
+    position: absolute;
+}
+#fi-text-left {
+    position: absolute;
+}
 #f-text-right {
+    position: absolute;
+}
+#fi-text-right {
     position: absolute;
 }
 
