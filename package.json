@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Davids0da/Provins-skateboards-.git",
   "dependencies": {
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "express": "4.15.2",
     "jquery": "3.1.1"
   },
